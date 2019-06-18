@@ -3,3 +3,8 @@ Pre Material Design daily photo diary app with dropbox support. Sadly never got 
 
 
 ![alt logo](https://github.com/atla/Continuity/blob/master/res/drawable-nodpi/about2.png?raw=true)
+
+![alt main](https://github.com/atla/Continuity/blob/master/screens/main.png?raw=true)
+
+
+
