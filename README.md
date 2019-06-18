@@ -7,5 +7,5 @@ Pre Material Design daily photo diary app with dropbox support. Sadly never got 
 
 <img  width="300" src="https://github.com/atla/Continuity/blob/master/screens/main.png">
 <img  width="300" src="https://github.com/atla/Continuity/blob/master/screens/diary1.png">
-<img  width="300" src="https://github.com/atla/Continuity/blob/master/screens/diary2.png">
+<img  width="300" src="https://github.com/atla/Continuity/blob/master/screens/diarya2.png">
 <img  width="300" src="https://github.com/atla/Continuity/blob/master/screens/edit_diary.png">
