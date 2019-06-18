@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/menu_switch_diary"
+            android:icon="@drawable/ic_action_tiles_small"
+            android:orderInCategory="30"
+            android:showAsAction="ifRoom"
+            android:title="Switch Diary View">
+    </item>
+
+</menu>

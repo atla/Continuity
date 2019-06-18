@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e3e3e3"
+                android:padding="@dimen/small_padding"
+                tools:context=".MainActivity">
+
+    <LinearLayout
+            android:id="@+id/calendar_container"
+            android:layout_width="279dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/card"
+            android:orientation="vertical">
+    </LinearLayout>
+
+    <fragment
+            android:id="@+id/fragment1"
+            android:name="com.leihwelt.thedailypicture.fragments.TodayPictureFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/calendar_container"
+            android:layout_alignTop="@+id/calendar_container"
+            android:layout_marginLeft="@dimen/small_padding"
+            android:layout_toLeftOf="@+id/fragment2"
+            android:layout_toRightOf="@+id/calendar_container"
+            tools:layout="@layout/phone_today_fragment"/>
+
+    <fragment
+            android:id="@+id/fragment2"
+            android:name="com.leihwelt.thedailypicture.fragments.diary.DiaryFragment"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            tools:layout="@layout/diary_list"/>
+
+</RelativeLayout>

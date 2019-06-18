@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/relative_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.leihwelt.android.view.EventScrollView
+            android:id="@+id/event_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e3e3e3">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:id="@+id/image_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp">
+
+                <ImageView
+                        android:id="@+id/picture_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/no_image_back"/>
+
+                <TextView
+                        android:id="@+id/description_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#88000000"
+                        android:fontFamily="sans-serif-light"
+                        android:paddingBottom="@dimen/small_padding"
+                        android:paddingLeft="@dimen/medium_padding"
+                        android:paddingRight="@dimen/medium_padding"
+                        android:paddingTop="@dimen/small_padding"
+                        android:text="@string/no_description"
+                        android:textColor="#ffeeeeee"
+                        android:textSize="22sp"/>
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/date_label"
+                    style="@style/SpecialFontSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/medium_padding"
+                    android:paddingTop="@dimen/small_padding"
+                    android:text="Monday 18th November"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/grey"
+                    android:textSize="13sp"/>
+
+            <TextView
+                    android:id="@+id/long_text"
+                    style="@style/SpecialFontSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/medium_padding"
+                    android:text="..."
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp"/>
+        </LinearLayout>
+    </com.leihwelt.android.view.EventScrollView>
+
+    <TextView
+            android:id="@+id/description_label_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#88000000"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="@dimen/small_padding"
+            android:paddingLeft="@dimen/medium_padding"
+            android:paddingRight="@dimen/medium_padding"
+            android:paddingTop="@dimen/small_padding"
+            android:text="@string/no_description"
+            android:textColor="#ffeeeeee"
+            android:visibility="gone"
+            android:textSize="22sp"/>
+
+</RelativeLayout>

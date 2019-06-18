@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="@dimen/small_padding"
+              android:orientation="vertical">
+
+    <fragment
+            android:id="@+id/today_picture_fragment"
+            android:name="com.leihwelt.thedailypicture.fragments.TodayPictureFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:layout_weight="1"
+            tools:layout="@layout/today_picture_fragment"/>
+
+    <fragment
+            android:id="@+id/past_days_fragment"
+            android:name="com.leihwelt.thedailypicture.fragments.PastDaysFragmenet"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            tools:layout="@layout/past_days_fragment"/>
+
+</LinearLayout>

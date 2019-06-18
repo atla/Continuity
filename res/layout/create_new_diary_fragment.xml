@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/TextView01"
+            style="@style/SpecialFontSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_padding"
+            android:text="Create a new diary called"
+            android:textColor="@color/grey"
+            android:textSize="18sp"/>
+
+    <EditText
+            android:id="@+id/diary_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_padding"
+            android:ems="10"
+            android:hint="Diary Name"/>
+
+    <LinearLayout
+            android:id="@+id/date_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+        <TextView
+                android:id="@+id/date_label"
+                style="@style/SpecialFontSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/small_padding"
+                android:text="Start with the diary on the following day: Today"
+                android:textColor="@color/grey"
+                android:textSize="18sp"/>
+
+        <Button
+                android:id="@+id/change_date_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change"/>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/TextView01"
+            style="@style/SpecialFontSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_padding"
+            android:text="Choose a storage location"
+            android:textColor="@color/grey"
+            android:textSize="18sp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="#eee">
+
+        <TextView
+                android:id="@+id/local_storage"
+                style="@style/SpecialFontSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_action_folder_tabs"
+                android:gravity="center"
+                android:text="Local Storage"
+                android:textColor="#333"
+                android:textSize="20sp"/>
+
+        <TextView
+                android:id="@+id/dropbox"
+                style="@style/SpecialFontSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_action_cloud"
+                android:gravity="center"
+                android:text="Dropbox"
+                android:textColor="#333"
+                android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/ok_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:background="@drawable/click_back"
+                android:text="Ok"/>
+
+        <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color"
+                android:background="@drawable/click_back"
+                android:text="Cancel"/>
+    </LinearLayout>
+
+</LinearLayout>

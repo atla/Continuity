@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- <solid android:color="#33B5E5" /> -->
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#2ecc71"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap android:dither="true" android:src="@drawable/pineapplecut"
+                android:tileMode="repeat"></bitmap>
+    </item>
+
+</selector> <!-- <shape android:shape="rectangle"> -->
+        <!-- <solid android:color="#f3f3f3" /> -->
+        <!-- </shape> -->

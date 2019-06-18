@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">The Daily Droid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_create_diary">Create New Diary</string>
+    <string name="delete_diary">Delete current Diary</string>
+    <string name="delete_diary_dialog">This can\'t be undone. Do you really want to delete the
+        Diary
+    </string>
+    <string name="change_diary">Change Diary</string>
+    <string name="choose_diary_title">Select an active diary</string>
+    <string name="today_picture_not_taken">You did not take a picture today.</string>
+    <string name="that_day_picture_not_taken">You did not take a picture that day.</string>
+    <string name="want_to_label_it">Perfect! Want to label it?</string>
+    <string name="no_description">No Description</string>
+    <string name="register_dropbox">Register Dropbox</string>
+
+</resources>

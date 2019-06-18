@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:id="@+id/picture_wrapper"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                <include
+                        android:id="@+id/diary_edit_ref"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="50dp"
+                        layout="@layout/diary_edit"/>
+
+                <RelativeLayout
+                        android:id="@+id/picture_info_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                    <ImageView
+                            android:id="@+id/no_picture_taken"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/take_picture_back"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:scaleType="centerInside"/>
+
+                    <TextView
+                            android:id="@+id/diary_text_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_margin="@dimen/small_padding"
+                            android:drawableLeft="@drawable/ic_action_calendar_month"
+                            android:drawablePadding="@dimen/small_padding"
+                            android:gravity="center_vertical"
+                            android:text="Thu 25th Dec. 13"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#ffffff"
+                            android:visibility="gone"/>
+
+                </RelativeLayout>
+
+                <ProgressBar
+                        android:id="@+id/picture_loading_progressbar"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:id="@+id/description_wrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/card">
+
+                <FrameLayout
+                        android:id="@+id/text_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1">
+
+                    <TextView
+                            android:id="@+id/no_picture_taken_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/click_back"
+                            android:clickable="true"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/small_padding"
+                            android:singleLine="true"
+                            android:text="@string/today_picture_not_taken"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/text_color"/>
+
+                    <EditText
+                            android:id="@+id/picture_text_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:alpha="0"
+                            android:ems="10"
+                            android:hint="What did you do today?"
+                            android:lines="1"
+                            android:singleLine="true">
+
+                        <requestFocus/>
+                    </EditText>
+                </FrameLayout>
+
+                <ImageButton
+                        android:id="@+id/diary_button"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:alpha="0.5"
+                        android:background="@drawable/click_back"
+                        android:src="@drawable/ic_action_book"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

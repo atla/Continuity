@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/diary_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f7f7f7">
+
+    <EditText
+            android:id="@+id/diary_edit"
+            style="@style/SpecialFontSmall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Write your diary entry"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/small_padding"
+            android:textSize="16sp"/>
+
+    <ImageView
+            android:id="@+id/shadow_top"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/shadow_top"/>
+
+    <!--     <ImageView -->
+    <!--         android:id="@+id/shadow_bottom" -->
+    <!--         android:layout_width="match_parent" -->
+    <!--         android:layout_height="1dp" -->
+    <!--         android:layout_alignParentBottom="true" -->
+    <!--         android:layout_alignParentLeft="true" -->
+    <!--         android:layout_alignParentRight="true" -->
+    <!--         android:background="#cccccc" /> -->
+
+</RelativeLayout>

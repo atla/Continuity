@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/menu_entry_share"
+            android:actionProviderClass="android.widget.ShareActionProvider"
+            android:icon="@drawable/ic_action_share"
+            android:orderInCategory="30"
+            android:showAsAction="ifRoom"
+            android:title="Share">
+    </item>
+
+</menu>
